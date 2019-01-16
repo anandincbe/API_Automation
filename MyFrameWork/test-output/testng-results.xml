@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" ignored="1" total="2" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="199746" started-at="2018-12-28T05:25:04Z" finished-at="2018-12-28T05:28:24Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="199746" started-at="2018-12-28T05:25:04Z" finished-at="2018-12-28T05:28:24Z">
+      <class name="Test.Flight">
+        <test-method status="PASS" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:Test.Flight@1165b38]" name="setUpTest" is-config="true" duration-ms="49" started-at="2018-12-28T05:25:04Z" finished-at="2018-12-28T05:25:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@74cf8b28]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Test.Flight@1165b38]" name="setUpClass" is-config="true" duration-ms="198544" started-at="2018-12-28T05:25:05Z" finished-at="2018-12-28T05:28:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@74cf8b28]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="SKIP" signature="flightReservation(java.util.HashMap)[pri:0, instance:Test.Flight@1165b38]" name="flightReservation" duration-ms="0" started-at="2018-12-28T05:28:23Z" data-provider="get-test-data-method" finished-at="2018-12-28T05:28:23Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[org.apache.poi.openxml4j.exceptions.InvalidOperationException: Can't open the specified file input stream from file: 'D:\Personal\MyFrameWork\src\test\resources\com\elliemae\null\data\Flight_Data.xlsx']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: org.apache.poi.openxml4j.exceptions.InvalidOperationException: Can't open the specified file input stream from file: 'D:\Personal\MyFrameWork\src\test\resources\com\elliemae\null\data\Flight_Data.xlsx'
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:131)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:923)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.apache.poi.openxml4j.exceptions.InvalidOperationException: Can't open the specified file input stream from file: 'D:\Personal\MyFrameWork\src\test\resources\com\elliemae\null\data\Flight_Data.xlsx'
+at org.apache.poi.openxml4j.opc.ZipPackage.openZipEntrySourceStream(ZipPackage.java:155)
+at org.apache.poi.openxml4j.opc.ZipPackage.<init>(ZipPackage.java:142)
+at org.apache.poi.openxml4j.opc.ZipPackage.<init>(ZipPackage.java:117)
+at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:257)
+at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:187)
+at Base.ExcelParser.readTestData(ExcelParser.java:75)
+at Base.Base.getDataProvider(Base.java:421)
+at Base.Base.getTestDataMethod(Base.java:391)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+... 22 more
+Caused by: java.io.FileNotFoundException: D:\Personal\MyFrameWork\src\test\resources\com\elliemae\null\data\Flight_Data.xlsx (The system cannot find the path specified)
+at java.io.FileInputStream.open0(Native Method)
+at java.io.FileInputStream.open(Unknown Source)
+at java.io.FileInputStream.<init>(Unknown Source)
+at org.apache.poi.openxml4j.opc.ZipPackage.openZipEntrySourceStream(ZipPackage.java:152)
+... 36 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightReservation -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:Test.Flight@1165b38]" name="tearDownClass" is-config="true" duration-ms="1001" started-at="2018-12-28T05:28:23Z" finished-at="2018-12-28T05:28:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="tearDownTest()[pri:0, instance:Test.Flight@1165b38]" name="tearDownTest" is-config="true" duration-ms="1" started-at="2018-12-28T05:28:24Z" finished-at="2018-12-28T05:28:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- Test.Flight -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
